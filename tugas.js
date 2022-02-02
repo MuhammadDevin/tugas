@@ -1,8 +1,13 @@
-const web = 'cahkoding'
-function aplikasi(){
-    if(true){
-        const app = 'dicoding'
-        console.log(app)
+function devin(ac) {
+    return ac % 2 == 0
+}
+
+function arrasyid(ac, callback) {
+    let isTrue = callback(ac)
+    if(isTrue){
+        console.log(`ini ${ac} adalah bilangan genap`)
+    } else {
+        console.log(`ini ${ac} adalah bilangan ganjil`)
     }
 }
-aplikasi()
+arrasyid(2, devin)
